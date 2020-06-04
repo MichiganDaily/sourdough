@@ -1,8 +1,0 @@
-{
-    "archie": {
-        "gdoc": "1b1G4vXtHYZqwB8Ofky7szg6_kItoxZKIEob-DBcrDH0",
-        "template": "./template/index.html",
-        "output": "./template/copy.json",
-        "apiConfig": "./auth.json"
-    }
-}
