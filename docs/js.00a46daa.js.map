@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["window","onload","console","log"],"mappings":"AAAAA,MAAM,CAACC,MAAP,GAAgB,YAAY;AAC1BC,EAAAA,OAAO,CAACC,GAAR,CAAY,KAAZ;AACD,CAFD","file":"js.00a46daa.js","sourceRoot":"../src","sourcesContent":["window.onload = function () {\n  console.log(\"hi!\");\n}\n"]}

@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #374567;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 15px 20px 10px;
+  box-shadow: 0px 1px 1px 1px #0002;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+header .header__logo {
+  width: 150px;
+}
+
+p.data {
+  background-color: #eee;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 50px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+article {
+  max-width: 600px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+div.by {
+  color: #0009;
+  font-size: 0.8rem;
+}
+div.by span.author:last-of-type::before {
+  content: " and ";
+}
+div.by span.author:nth-last-of-type(2)::after,
+div.by span.author:last-of-type::after {
+  content: "";
+}
+div.by span.author::after {
+  content: ", ";
+}
+div.by span.author:first-of-type::before {
+  content: "";
+}
+
+.figure__graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure__title {
+  font-size: 1rem;
+}
+
+.figure__byline {
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.figure__caption {
+  margin-bottom: 16px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=/base.4fb79adc.css.map */
