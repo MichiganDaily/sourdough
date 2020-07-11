@@ -1,0 +1,43 @@
+{# This is a template #}
+{% extends "base.html" %}
+
+{% block script %}
+{% endblock script %}
+
+{% block style %}
+{% endblock style %}
+
+{% block content %}
+        {% for item in body %}
+        {% if item.type == "text" %}
+        <p>{{ item.value }}</p>
+        {% elif item.type == "Section" %}
+        <h2>{{ item.value }}</h2>
+        {% elif item.type == "Subsection" %}
+        <h3>{{ item.value }}</h3>
+        {% elif item.type == "Figure" %}
+        <figure class="vis {{ item.value.Name }}">
+        </figure>
+        {% elif item.type == "Image" %}
+        {% if item.value.Url %}
+        <img src="{{ item.value.Url }}" alt="" />
+        {% else %}
+        <img src="{{ item.value }}" alt="" />
+        {% endif %}
+        {% elif item.type == "DataDescription" %}
+        <p class="data">{{ item.value }}</p>
+        {% elif item.type == "List" or item.type == "UList" %}
+        <ul>
+            {% for listItem in item.value %}
+            <li>{{ listItem }}</li>
+            {% endfor %}
+        </ul>
+        {% elif item.type == "OList" %}
+        <ol>
+            {% for listItem in item.value %}
+            <li>{{ listItem }}</li>
+            {% endfor %}
+        </ol>
+        {% endif %}
+        {% endfor %}
+{% endblock content %}
