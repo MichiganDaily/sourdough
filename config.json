@@ -1,9 +1,16 @@
 {
     "archie": {
+        "template": "./template/archie.html",
         "gdoc": "1b1G4vXtHYZqwB8Ofky7szg6_kItoxZKIEob-DBcrDH0",
-        "template": "./template/index.html",
         "output": "./template/copy.json",
         "apiConfig": "./auth.json"
+    },
+    "markdown": {
+        "template": "./template/markdown.html",
+        "path": "./src/article.md"
+    },
+    "render_options": {
+        "renderer": "archie"
     },
     "hostname": "magnify.michigandaily.us",
     "base_url": "sourdough",
