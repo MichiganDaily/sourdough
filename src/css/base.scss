@@ -33,6 +33,9 @@ header {
 }
 
 footer {
+    width: 80vw;
+    max-width: 600px;
+    margin: 0 auto;
     height: 40px;
     display: flex;
     justify-content: space-around;

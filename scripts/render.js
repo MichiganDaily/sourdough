@@ -7,7 +7,7 @@ const toc = require("markdown-toc");
 const config = JSON.parse(fs.readFileSync("./config.json", "utf-8"));
 
 let copy;
-let template = config[config.render_options.renderer].template;
+let template = fs.readFileSync(config[config.render_options.renderer].template, "utf-8");
 
 if (config.render_options.renderer === "archie") {
   copy = JSON.parse(fs.readFileSync(config.archie.output));
